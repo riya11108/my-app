@@ -103,7 +103,7 @@ const HomePage = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Why Choose RentFinder?</h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Why Choose SmartLease?</h2>
             <p className="text-xl text-gray-600">We make finding your perfect rental in India simple, safe, and stress-free</p>
           </div>
 
