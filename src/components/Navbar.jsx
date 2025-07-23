@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Home, Menu, X, Heart } from 'lucide-react';
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,11 +53,14 @@ const Navbar = () => {
               <span className="text-sm">Saved</span>
             </Link>
             <button className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium">
-              Sign In
+            <SignedOut>
+        <SignInButton />
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
             </button>
-            <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
-              Sign Up
-            </button>
+
           </div>
 
           {/* Mobile menu button */}
